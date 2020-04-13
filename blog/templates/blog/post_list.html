@@ -3,9 +3,11 @@
         <title>TESTINg</title>
     </head>
     <body>
+
         <div>
             <h1><a href="/">Google.com</a></h1>
         </div>
+
         {% for post in posts %}
             <div>
                 <p>published: {{ post.published_date }}</p>
@@ -13,5 +15,7 @@
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
+
     </body>
+    
 </html>
